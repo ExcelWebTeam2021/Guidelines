@@ -14,7 +14,8 @@
 
 1. https://medium.com/@immily/sampe-of-git-workflow-for-small-team-6d5836b9b7ce
 2. https://deepsource.io/blog/git-best-practices/
-3. Don’t git push straight to masin. Branch it out!
+3. Commit early, commit often. The commit message must be descriptive and meaningful 
+4. Don’t git push straight to main. Branch it out!
 
 ```
 git checkout -b your-awesome-feature develop
@@ -31,9 +32,8 @@ someone will review the code and merge it to the master branch
 NEVER DIRECTLY MERGE TO MASTER
 ```
 
-3. Commit early, commit often. The commit message must be descriptive and meaningful 
 
-- How can I keep my branch up to date with master with git?
+### How can I keep my branch up to date with master with git?
 
 ```
 Assuming you're fine with taking all of the changes in master, what you want is:
@@ -41,8 +41,8 @@ Assuming you're fine with taking all of the changes in master, what you want is:
 git checkout <my branch>
 to switch the working tree to your branch; then:
 
-git merge master
-to merge all the changes in master with yours.
+git pull
+to pull all the changes 
 ```
 
 
